@@ -3,8 +3,20 @@
     <h4>Employee Management System</h4>
   </div>
 </header>
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="employees" class="nav-link">Employee List</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="create-employee" class="nav-link">Add Employee</a>
+    </li>
+  </ul>
+</nav>
 <h3 class="text-center text-primary">Welcome to Employee Management System</h3>
-<router-outlet></router-outlet>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
 <footer class="footer">
   <div class="container">
     <span>All Rights Reserved Raj Technologies</span>

@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { HttpClientModule } from '@angular/common/http';
 import { ListEmployeeComponent } from './list-employee-component/list-employee-component';
+import { FormsModule } from '@angular/forms';
+import { CreateEmployeeComponent } from './create-employee-component/create-employee-component';
 
 @NgModule({
   declarations: [
     App,
-    ListEmployeeComponent
+    ListEmployeeComponent,
+    CreateEmployeeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
