@@ -1,14 +1,20 @@
 <table class="table table-striped">
     <thead>
-        <th>Employee Name</th>
-        <th>Designation</th>
-        <th>Salary</th>
+        <tr>
+            <th>Employee Name</th>
+            <th>Designation</th>
+            <th>Salary</th>
+            <th>Action</th>
+        </tr>
     </thead>
     <tbody>
         <tr *ngFor="let employee of employees">
             <td>{{employee.empName}}</td>
             <td>{{employee.designation}}</td>
             <td>{{employee.empSalary}}</td>
+            <td>
+                <button (click)="updateEmployee(employee.empId)" class="btn btn-success">Update</button>
+            </td>
         </tr>
     </tbody>
 </table>
