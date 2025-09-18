@@ -26,4 +26,8 @@ export class EmployeeService {
   getEmployeeById(empId : number) : Observable<Employee>{
     return this.httpClient.get<Employee>(`${this.baseURL}/${empId}`);
   }
+
+  deleteEmployeeById(empId : number):Observable<object> {
+    return this.httpClient.delete<Employee>(`${this.baseURL}/${empId}`);
+  }
 }
